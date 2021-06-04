@@ -62,7 +62,7 @@ p_recall = spc(data.recalls_studypos, data.subjects, data.listlength);
 
 %% #3. Temporal Factor analysis 
 % Lag-based temporal clustering factor.
-temp_facts = temp_fact(data.recalls_studypos, data.subjects, data.listlength); 
+data.temp_facts = temp_fact(data.recalls_studypos, data.subjects, data.listlength); 
 
 %% figures 
 figure(1); % crp 
