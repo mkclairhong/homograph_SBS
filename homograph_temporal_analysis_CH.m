@@ -1,7 +1,14 @@
-% 06/03/2021
+% 06/09/2021
 % CRP script for Melissa & Sarah 
 
-dir = strcat(pwd);
+% change current directory to where this script is saved 
+
+path = matlab.desktop.editor.getActiveFilename; % get the path of this script 
+cd(fileparts(path)); % change directory to where this file is stored 
+
+%%
+dir = fileparts(which('homograph_temporal_analysis_CH'));
+
 delimiterIn = ',';
 
 % original data file contains three columns: 
